@@ -26,6 +26,7 @@
     "jquery": "3.2.1",
     "jw-bootstrap-switch-ng2": "1.0.3",
     "ng2-nouislider": "1.6.1",
+    "ngx-scroll-event": "^1.0.8",
     "nouislider": "9.2.0",
     "popper.js": "^1.12.3",
     "rxjs": "^5.1.0",

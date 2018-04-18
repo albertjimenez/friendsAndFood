@@ -1,4 +1,5 @@
-<div class="page-header" data-parallax="true" style="background-image: url('assets/img/wallpaper.jpg');" xmlns="">
+<div class="page-header" data-parallax="true" style="background-image: url('../../assets/img/wallpaper.jpg');" xmlns=""
+     detect-scroll (onScroll)="handleScroll($event)" [bottomOffset]="100" [topOffset]="100">
     <div class="filter"></div>
     <div class="container">
         <div class="motto text-center">
@@ -19,7 +20,7 @@
                     <h2 class="title">Nuestro producto</h2>
                     <h5 class="description">Explicar.</h5>
                     <br>
-                    <a href="#aboutus" class="btn btn-danger btn-round">Ver más detalles</a>
+                    <a class="btn btn-danger btn-round">Ver más detalles</a>
                 </div>
             </div>
             <br/><br/>
@@ -33,7 +34,6 @@
                             <h4 class="info-title">UX</h4>
                             <p class="description">Orientado por y para el usuario
                                 manteniendo funcionalidad y simpleza.</p>
-                            <!--<a href="#pkp" class="btn btn-link btn-danger">See more</a>-->
                         </div>
                     </div>
                 </div>
@@ -176,47 +176,6 @@
             </div>
         </div>
     </div>
-
-    <!--<div class="section landing-section">-->
-    <!--<div class="container">-->
-    <!--<div class="row">-->
-    <!--<div class="col-md-8 mr-auto ml-auto">-->
-    <!--<h2 class="text-center">Keep in touch?</h2>-->
-    <!--<form id="myform" class="contact-form">-->
-    <!--<div class="row">-->
-    <!--<div class="col-md-6">-->
-    <!--<label>Name</label>-->
-    <!--<div class="input-group">-->
-    <!--<span class="input-group-addon">-->
-    <!--<i class="nc-icon nc-single-02"></i>-->
-    <!--</span>-->
-    <!--<input id="form-name" type="text" class="form-control" placeholder="Name">-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="col-md-6">-->
-    <!--<label>Email</label>-->
-    <!--<div class="input-group">-->
-    <!--<span class="input-group-addon">-->
-    <!--<i class="nc-icon nc-email-85"></i>-->
-    <!--</span>-->
-    <!--<input type="text" id="form-email" class="form-control" placeholder="Email">-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<label>Message</label>-->
-    <!--<textarea class="form-control" rows="4" id="form-text"-->
-    <!--placeholder="Tell us your thoughts and feelings..."></textarea>-->
-    <!--<div class="row">-->
-    <!--<div class="col-md-4 mr-auto ml-auto">-->
-    <!--<button id="form-button" onclick="sendEmail()" class="btn btn-danger btn-lg btn-fill">Send Message</button>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</form>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
 </div>
 <div class="section section-gray text-center">
     <div class="container">
@@ -239,3 +198,9 @@
         </div>
     </div>
 </div>
+<a class="float" *ngIf="goBot" (click)="goToTheBottom()">
+    <i class="fa fa-angle-down my-float"></i>
+</a>
+<a class="float" *ngIf="goTop" (click)="goToTheTop()">
+    <i class="fa fa-angle-up my-float"></i>
+</a>
