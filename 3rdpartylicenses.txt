@@ -104,6 +104,10 @@ punycode@1.4.1
 MIT
 MIT
 
+ngx-scroll-event@1.0.8
+MIT
+MIT
+
 @angular/router@4.3.1
 MIT
 MIT
