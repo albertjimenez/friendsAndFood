@@ -1,4 +1,4 @@
-<div class="page-header" data-parallax="true" style="background-image: url('../../assets/img/wallpaper.jpg');" xmlns=""
+<div class="page-header" data-parallax="true" style="background-image: url('assets/img/wallpaper.jpg');" xmlns=""
      detect-scroll (onScroll)="handleScroll($event)" [bottomOffset]="100" [topOffset]="100">
     <div class="filter"></div>
     <div class="container">
@@ -6,21 +6,28 @@
             <h1>Friends and food</h1>
             <h3>Porque la comida sabe mejor si es con tus amigos.</h3>
             <br/>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i
-                    class="fa fa-play"></i>Vídeo aleatorio</a>
-            <button type="button" class="btn btn-outline-neutral btn-round">Sin funcionalidad</button>
+            <a href="https://www.youtube.com/watch?v=qaZ9jbVZB80" target="_blank"
+               class="btn btn-outline-neutral btn-round"><i
+                    class="fa fa-play"></i>¿Cómo lo hacemos?</a>
+            <!--<button type="button" class="btn btn-outline-neutral btn-round">Sin funcionalidad</button>-->
+            <a class="btn btn-danger btn-round" [ngx-scroll-to]="'#destination-product'">Ver más detalles</a>
+
+
         </div>
     </div>
 </div>
-<div class="main">
+<div class="main" id="destination-product">
     <div class="section text-center">
-        <div class="container">
+        <div class="container" id="#product">
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
                     <h2 class="title">Nuestro producto</h2>
-                    <h5 class="description">Explicar.</h5>
+                    <h5 class="description">Ponemos a disposición de las personas, una herramienta para organizar
+                        de una forma simple y atractiva, todos los eventos cuyo propósito sea disfrutar de la buena
+                        comida.
+                        Para ello, usamos los mapas de Google para que ubiques los lugares, y una interfaz robusta y
+                        atractiva, adaptada a los diseños más actuales.</h5>
                     <br>
-                    <a class="btn btn-danger btn-round">Ver más detalles</a>
                 </div>
             </div>
             <br/><br/>
@@ -177,25 +184,85 @@
         </div>
     </div>
 </div>
-<div class="section section-gray text-center">
+<div class="section section-gray text-center" id="destination-funding">
     <div class="container">
         <h2 class="title">Financiación</h2>
         <div class="row">
-            <div class="col-md-6">
-                <p>Nos financiamos de los restaurante que quieren ser promocionados? + datos generados y publicidad
-                    en la app no intrusiva?</p>
+            <div class="col-md-12">
+                <!--<p>Nos financiamos de los restaurante que quieren ser promocionados? + datos generados y publicidad-->
+                <!--en la app no intrusiva?</p>-->
+                <p>
+                    Nuestro modelo de financiación se basa en un contrato entre los locales que deseen ser
+                    promocionados,
+                    junto a publicidad no intrusiva. Nuestro objetivo no es llenarte de publicidad, ni nunca lo será.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="description">
+                        <h4 class="info-title">Publicidad</h4>
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-diamond"></i>
+                        </div>
+
+                    </div>
+                </div>
+                El advertising de Google mostrará publicidad pasando siempre desapercibido. Si deseas más información
+                pulsa aquí para conocer como funciona. <a href="https://adwords.google.com/intl/es_es/home/"
+                                                          target="_blank">AdWords</a>
+            </div>
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="description">
+                        <h4 class="info-title">Locales de promoción</h4>
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-shop"></i>
+                        </div>
+                    </div>
+                    Verás qué restaurantes desean atraer tu atención y con ello quizá te guste probar. Intentamos
+                    sugerirte locales
+                    promocionados que sean compatibles con tus gustos.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="description">
+                        <h4 class="info-title">Extracción de datos relevantes</h4>
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-spaceship"></i>
+                        </div>
+                    </div>
+                    Como todas los negocios, se generan cada día ingentes cantidades de datos, e incluso muchas
+                    veces, éstos son
+                    ignorados ocasionando la pérdida de un volumen de negocio a tener en cuenta. Nosotros
+                    creemos en la premisa
+                    de que los datos son el nuevo oro de este siglo, y por ello recolectamos de forma anónima
+                    los datos de los eventos
+                    para así poder observar las tendencias del mercado. Una vez analizados, dichos datos pueden
+                    ser comercializados
+                    con una empresa interesa, pero no te preocupes, nosotros sí cumplimos la nueva GDPR y
+                    siempre que esto suceda,
+                    serás informado como dueño legítimo de los datos. <a href="https://acumbamail.com/gdpr/"
+                                                                         target="_blank">GDPR</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="section section-dark-blue text-center">
+<div class="section section-gold text-center">
     <div class="container">
         <h2 class="title">Implementación</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Se implementa de la forma...</p>
-            </div>
-        </div>
+        Llegamos con la parte técnica sólo apta para geeks y desarrolladores.
+        En cuanto a la arquitectura de software que vamos a utilizar, creemos que la que más se adapta a
+        nuestras necesidades es la arquitectura de cliente-servidor. La parte visual corre a cargo de Angular 2
+        y en el servidor, Spark junto con Kotlin y MongoDB. Todo ello ilustrado de la siguiente imagen
+        <br>
+        <a href="assets/img/arq.png" target="_blank">
+            <img src="assets/img/arq.png" class="responsive-img">
+        </a>
     </div>
 </div>
 <a class="float" *ngIf="goBot" (click)="goToTheBottom()">

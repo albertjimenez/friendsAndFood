@@ -11,14 +11,16 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="UJI" data-placement="bottom" href="#">
+                    <a class="nav-link" rel="tooltip" title="UJI" data-placement="bottom"
+                       [ngx-scroll-to]="'#destination-product'" (click)="sidebarClose()">
                         <i class="fa fa-briefcase"></i>
                         <p class="d-lg-none"></p>
                         Proyecto
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Financiación" data-placement="bottom" href="#">
+                    <a class="nav-link" rel="tooltip" title="Financiación" data-placement="bottom"
+                       [ngx-scroll-to]="'#destination-funding'" (click)="sidebarClose()">
                         <i class="fa fa-money"></i>
                         <p class="d-lg-none"></p>
                         Financiación

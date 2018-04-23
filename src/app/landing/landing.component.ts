@@ -1,17 +1,20 @@
 import {Component, OnInit} from '@angular/core';
-import {ScrollEvent} from "ngx-scroll-event";
+import {ScrollEvent} from 'ngx-scroll-event';
 
 @Component({
     selector: 'app-landing',
     templateUrl: './landing.component.html',
-    styleUrls: ['./landing.component.scss']
+    styleUrls: ['./landing.component.scss'],
+    providers: []
 })
 
 export class LandingComponent implements OnInit {
 
     goTop = false;
     goBot = false;
-  constructor() { }
+
+    constructor() {
+    }
 
   ngOnInit() {}
 

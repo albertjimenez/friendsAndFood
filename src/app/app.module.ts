@@ -14,6 +14,8 @@ import {FooterComponent} from './shared/footer/footer.component';
 
 import {HomeModule} from './home/home.module';
 import {ScrollEventModule} from 'ngx-scroll-event';
+import {ScrollToModule} from '@nicky-lenaers/ngx-scroll-to';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import {ScrollEventModule} from 'ngx-scroll-event';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-      HomeModule, ScrollEventModule
+      HomeModule, ScrollEventModule,
+      ScrollToModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
