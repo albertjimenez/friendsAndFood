@@ -97,13 +97,13 @@
                 <div class="col-md-6">
                     <div class="card card-profile card-plain">
                         <div class="card-avatar">
-                            <a href="#avatar"><img src="assets/img/faces/albert.png" alt="..."></a>
+                            <a href="#avatar"><img class="shadow-img" src="assets/img/faces/albert.png" alt="..."></a>
                         </div>
                         <div class="card-block">
                             <a href="#paper-kit">
                                 <div class="author">
                                     <h4 class="card-title">Albert</h4>
-                                    <h6 class="card-category">Product Manager</h6>
+                                    <h6 class="card-category">Product Manager / Devops</h6>
                                 </div>
                             </a>
                             <p class="card-description text-center">
@@ -123,7 +123,7 @@
                 <div class="col-md-6">
                     <div class="card card-profile card-plain">
                         <div class="card-avatar">
-                            <a href=""><img src="assets/img/faces/pablo.png" alt="..."></a>
+                            <a href=""><img class="shadow-img" src="assets/img/faces/pablo.png" alt="..."></a>
                         </div>
                         <div class="card-block">
                             <a href="#paper-kit">
@@ -148,7 +148,8 @@
                 <div class="col-md-6">
                     <div class="card card-profile card-plain">
                         <div class="card-avatar">
-                            <a href="#avatar"><img src="assets/img/faces/tokis-nv3.png" alt="..."></a>
+                            <a href="#avatar"><img class="shadow-img" src="assets/img/faces/tokis-nv3.png"
+                                                   alt="..."></a>
                         </div>
                         <div class="card-block">
                             <a href="#paper-kit">
@@ -167,7 +168,7 @@
                 <div class="col-md-6">
                     <div class="card card-profile card-plain  align-items-center">
                         <div class="card-avatar">
-                            <a href="#avatar"><img src="assets/img/faces/raul.png" alt="..."></a>
+                            <a href="#avatar"><img class="shadow-img" src="assets/img/faces/raul.png" alt="..."></a>
                         </div>
                         <div class="card-block">
                             <a href="#paper-kit">
@@ -267,6 +268,34 @@
         <a href="assets/img/arq.png" target="_blank">
             <img src="assets/img/arq.png" class="responsive-img shadow-img">
         </a>
+    </div>
+</div>
+<div class="section section-brown text-center" id="destination-method">
+    <div class="container">
+        <h2 class="title">Metodología</h2>
+        Actualmente, debido a las fechas impuestas y la carga de trabajo, una metodología ágil como SCRUM explicada
+        en clase se adapta perfectamente. Usamos la herramienta JIRA junto a Confluence para gestionar las historias de
+        usuario
+        que posteriormente desglosamos en tareas y repartimos de forma equitativa entre los miembros del grupo.
+        Con sprints de dos semanas aproximadamente de duración y una gran colaboración
+        y compromiso por parte del grupo, cada final de sprint conseguimos un producto con una serie de requisitos
+        mínimos
+        que nos permite ir avanzando a gran velocidad y detectar problemas en una fase temprana. Sin embargo, los
+        grandes
+        proyectos suelen requerir grandes cambios y éste no ha sido menos. Hemos incluido la metodología DevOps como
+        añadido.
+        En nuestro caso Albert hace de desarrollador y también gestiona la parte de ingeniería de sistemas llevando a
+        cabo
+        el escalado y mantenimiento del servidor junto al despliegue de la arquitectura y los certificados HTTPS.
+        Junto a ello, en común con Pablo se gestiona el testing y la integración continua de los cambios en Bitbucket
+        mediante
+        Pipelines, de esta manera sabemos en cada momento si el código que un compañero ha subido, supera las pruebas
+        mínimas.
+        <a href="assets/img/devops.png" target="_blank">
+            <img src="assets/img/devops.png" class="responsive-img shadow-img2">
+        </a>
+        <br>
+        <br>
     </div>
 </div>
 <a class="float" *ngIf="goBot" (click)="goToTheBottom()">

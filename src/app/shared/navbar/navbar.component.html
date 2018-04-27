@@ -26,6 +26,14 @@
                         Financiación
                     </a>
                 </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link cursor" rel="tooltip" title="Metodología" data-placement="bottom"
+                       [ngx-scroll-to]="'#destination-method'" (click)="sidebarClose()">
+                        <i class="fa fa-sitemap"></i>
+                        <p class="d-lg-none"></p>
+                        Metodología
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
